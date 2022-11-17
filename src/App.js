@@ -1,5 +1,6 @@
 import Features from "./components/Features";
 import StoryContent from "./components/StoryContent";
+import StoryPictures from "./components/StoryPictures";
 import "./scss/main.scss";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <section className="features">
         <Features/>
       </section>
-      <div className="story__pictures">story__pictures</div>
+      <div className="story__pictures"><StoryPictures/></div>
       <div className="story__content"><StoryContent/></div>
       <section className="homes">homes</section>
       <section className="gllery">gllery</section>
