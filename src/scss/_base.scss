@@ -1,0 +1,57 @@
+$color-primary: #F8F9FA;
+$color-primary-dark: #212529;
+
+$color-secondary: #101d2c;
+
+$color-gray-light-1: #E9ECEF;
+$color-gray-light-2: #DEE2E6;
+
+$color-gray-dark-1: #495057;
+$color-gray-dark-2: #343A40;
+
+$font-primary: "Roboto", sans-serif;
+
+// $color-primary: #c69963;
+// $color-primary-dark: #b2b451;
+
+// $color-secondary: #101d2c;
+
+// $color-gray-light-1: #f9f7f6;
+// $color-gray-light-2: #aaa;
+
+// $color-gray-dark-1: #54483a;
+// $color-gray-dark-2: #6d5d48;
+
+// $font-primary: "Roboto", sans-serif;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-gray-dark-2;
+  box-sizing: border-box;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 6rem [sidebar-end full-start] minmax(6rem,1fr)  [center-start] repeat(
+      8,
+      [col-start] minmax(max-content, 14rem) [col-end]
+    ) [center-end] minmax(6rem,1fr) [full-end];
+}

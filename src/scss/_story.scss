@@ -1,0 +1,22 @@
+.story{
+    &__pictures{
+        background-color: red;
+        grid-column: full-start/ col-end 4;
+    }
+    &__content{
+        background-color: $color-gray-light-1;
+        grid-column: col-start 5 / full-end;
+
+        padding: 6rem 8vw;
+
+        display: grid;
+        place-content: center;
+
+       
+    }
+
+    &__text{
+        font-style: italic;
+        font-size:1.5rem ;
+    }
+}
