@@ -2,13 +2,21 @@
   &__pictures {
     grid-column: full-start/ col-end 4;
 
-    display: grid; 
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
   }
-  &__img-1{
+  &__img-1 {
     width: 100%;
-}
-&__img-2{
-    width: 100%;
+    grid-row:2/6 ;
+    grid-column: 2/6;
+  }
+  &__img-2 {
+    width: 120%;
+    grid-row:4/6 ;
+    grid-column: 4/7;
+    z-index: 20;
   }
   &__content {
     background-color: $color-gray-light-1;
