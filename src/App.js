@@ -1,4 +1,5 @@
 import Features from "./components/Features";
+import Homes from "./components/Homes";
 import StoryContent from "./components/StoryContent";
 import StoryPictures from "./components/StoryPictures";
 import "./scss/main.scss";
@@ -15,7 +16,7 @@ function App() {
       </section>
       <div className="story__pictures"><StoryPictures/></div>
       <div className="story__content"><StoryContent/></div>
-      <section className="homes">homes</section>
+      <section className="homes"> <Homes/> </section>
       <section className="gllery">gllery</section>
       <footer className="footer">footer</footer>
     </div>   
